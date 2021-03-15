@@ -7,19 +7,34 @@
 /* Вторичный цвет фона background: #2F303A; */
 /* Цвет фона секции "Наша команда" background: #F5F4FA; */
 
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-link-color: #2196f3;
+  --accent-text-color: #ffffff;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --primary-bg-color: #ffffff;
+  --accent-bg-color: #2f303a;
+  --accent-bg-second-color: #f5f4fa;
+}
+
 body {
-  background-color: #ffffff;
+  background-color: var(--primary-bg-color);
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
-/* Класс для точечного сброса всроенных настроек */
+/* Страница "Студия" */
+/* Классы для точечного сброса всроенных настроек */
 .list {
   list-style: none;
+}
+.link {
+  text-decoration: none;
 }
 
 /* Оформление heder */
@@ -29,7 +44,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.9;
-  color: #2196f3;
+  color: var(--accent-link-color);
 }
 /* #2196F3 */
 .logo-text {
@@ -37,64 +52,69 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.9;
-  color: #212121;
+  color: var(--title-text-color);
 }
 /* Навигация */
 .site-nav .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
-  color: #212121;
+  color: var(--title-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-link-color);
+}
+.site-nav .link.current {
+  color: var(--accent-link-color);
 }
 .contakt .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
-  color: #212121;
+  color: var(--title-text-color);
 }
 .contakt .link:hover,
 .contakt .link:focus {
-  color: #2196f3;
+  color: var(--accent-link-color);
 }
 
 /* Оформление main */
 /* section-hero */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--accent-bg-color);
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 3.8;
-  color: #ffffff;
+  color: var(--accent-text-color);
 }
-.button-service {
+.hero-button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  color: #ffffff;
-  background: #2196f3;
+  color: var(--accent-text-color);
+  background: var(--accent-link-color);
+  cursor: pointer;
 }
 /* section "Наши преимущества" и "Чем мы занимаемся" */
 .title-section {
   font-weight: 700;
   font-size: 36px;
   line-height: 2.6;
-  color: #212121;
+  color: var(--title-text-color);
 }
 .title-list {
   font-weight: 700;
   font-size: 14px;
   line-height: 1;
-  color: #212121;
+  color: var(--title-text-color);
 }
 /* "Наша команда" */
 .team {
-  background: #f5f4fa;
+  background: var(--accent-bg-second-color);
 }
 
 /* footer */
@@ -102,21 +122,57 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.9;
-  color: #ffffff;
+  color: var(--accent-text-color);
 }
 .footer {
-  background: #2f303a;
+  background: var(--accent-bg-color);
 }
 .footer-adress {
-  color: #ffffff;
+  font-style: normal;
+  color: var(--accent-text-color);
 }
 .footer-contact .link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-text-color);
 }
 .footer-contact .link:hover,
 .footer-contact .link:focus {
-  color: #2196f3;
+  color: var(--accent-link-color);
+}
+
+/* Страница "Портфолио" */
+/* Секция main */
+.example {
+}
+.example-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--accent-bg-second-color);
+  color: var(--title-text-color);
+  cursor: pointer;
+}
+.example-button:hover,
+.example-button:focus {
+  color: var(--accent-text-color);
+  background-color: var(--accent-link-color);
+}
+.page-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2.3;
+  color: var(--title-text-color);
+}
+.page-text .link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--primary-text-color);
+}
+.page-text .link:hover,
+.page-text .link:focus {
+  color: var(--accent-link-color);
 }
