@@ -184,7 +184,7 @@ body {
   line-height: 2;
   color: var(--title-text-color);
 }
-.work .work-text {
+.work-text {
   letter-spacing: 0.06em;
 }
 .work .link {
