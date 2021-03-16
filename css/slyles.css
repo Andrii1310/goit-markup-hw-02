@@ -24,8 +24,9 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.71;
   color: var(--primary-text-color);
+  letter-spacing: 0.03em;
 }
 
 /* Страница "Студия" */
@@ -43,7 +44,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.9;
+  line-height: 1.19;
   color: var(--accent-link-color);
 }
 /* #2196F3 */
@@ -51,14 +52,15 @@ body {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.9;
+  line-height: 1.19;
   color: var(--title-text-color);
 }
 /* Навигация */
 .site-nav .link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
 .site-nav .link:hover,
@@ -71,7 +73,8 @@ body {
 .contakt .link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
 .contakt .link:hover,
@@ -82,46 +85,60 @@ body {
 /* Оформление main */
 /* section-hero */
 .hero {
+  letter-spacing: 0.06em;
   background-color: var(--accent-bg-color);
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 3.8;
+  line-height: 1.36;
+  text-transform: uppercase;  
   color: var(--accent-text-color);
 }
 .hero-button {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.88;
+  cursor: pointer;
+  letter-spacing: 0.06em;
   color: var(--accent-text-color);
   background: var(--accent-link-color);
-  cursor: pointer;
 }
 /* section "Наши преимущества" и "Чем мы занимаемся" */
 .title-section {
   font-weight: 700;
   font-size: 36px;
-  line-height: 2.6;
+  line-height: 1.17;
   color: var(--title-text-color);
 }
 .title-list {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.14;
   color: var(--title-text-color);
+  text-transform: uppercase;
 }
 /* "Наша команда" */
 .team {
   background: var(--accent-bg-second-color);
 }
-
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--title-text-color);
+}
+.team-text {
+  
+  font-size: 16px;
+  line-height: 1.88;
+}
 /* footer */
 .logo-footer {
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.9;
+  line-height: 1.19;
   color: var(--accent-text-color);
 }
 .footer {
@@ -134,7 +151,7 @@ body {
 .footer-contact .link {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.71;
   color: var(--footer-text-color);
 }
 .footer-contact .link:hover,
@@ -150,7 +167,8 @@ body {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
   background-color: var(--accent-bg-second-color);
   color: var(--title-text-color);
   cursor: pointer;
@@ -160,19 +178,22 @@ body {
   color: var(--accent-text-color);
   background-color: var(--accent-link-color);
 }
-.page-text {
+.work {
   font-weight: 700;
   font-size: 18px;
-  line-height: 2.3;
+  line-height: 2;
   color: var(--title-text-color);
 }
-.page-text .link {
+.work .work-text {
+  letter-spacing: 0.06em;
+}
+.work .link {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.88;
   color: var(--primary-text-color);
 }
-.page-text .link:hover,
-.page-text .link:focus {
+.work .link:hover,
+.work .link:focus {
   color: var(--accent-link-color);
 }
